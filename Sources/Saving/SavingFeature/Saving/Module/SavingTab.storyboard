@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1qM-K9-hJX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mitt sparande-->
+        <scene sceneID="lrQ-ao-tZE">
+            <objects>
+                <viewController id="ob4-Ux-uWz" customClass="SavingMainViewController" customModule="Saving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qc6-qQ-vl7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kqp-SD-uYJ">
+                                <rect key="frame" x="20" y="148" width="374" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-k0-gRi" customClass="FolksamCardView" customModule="FolksamUI">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="my_savings"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="axis">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Mitt sparande"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasChevron" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptL-yX-deO" customClass="FolksamCardView" customModule="FolksamUI">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="40"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="new_goal"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="axis">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Nytt sparmål!"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="hasChevron" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.29999999999999999"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="BPL-Zo-d9d"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_shapes" translatesAutoresizingMaskIntoConstraints="NO" id="WlT-I4-3k5">
+                                <rect key="frame" x="0.0" y="518" width="414" height="472"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="472" id="ubc-qP-R3K"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mfs-il-dQ1">
+                                <rect key="frame" x="192" y="739" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="..."/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="njG-cF-2RR"/>
+                        <color key="backgroundColor" name="FolksamColors/beige3"/>
+                        <constraints>
+                            <constraint firstItem="kqp-SD-uYJ" firstAttribute="centerX" secondItem="njG-cF-2RR" secondAttribute="centerX" id="Evy-cV-lfM"/>
+                            <constraint firstItem="kqp-SD-uYJ" firstAttribute="leading" secondItem="Qc6-qQ-vl7" secondAttribute="leading" constant="20" id="Pzj-du-L78"/>
+                            <constraint firstAttribute="trailing" secondItem="kqp-SD-uYJ" secondAttribute="trailing" constant="20" id="UEE-uE-ogq"/>
+                            <constraint firstItem="WlT-I4-3k5" firstAttribute="bottom" secondItem="njG-cF-2RR" secondAttribute="bottom" constant="177" id="kSF-s4-z5m"/>
+                            <constraint firstItem="WlT-I4-3k5" firstAttribute="leading" secondItem="njG-cF-2RR" secondAttribute="leading" id="rEd-Vd-2Uh"/>
+                            <constraint firstItem="kqp-SD-uYJ" firstAttribute="top" secondItem="njG-cF-2RR" secondAttribute="top" constant="8" id="zGn-kd-bZG"/>
+                            <constraint firstItem="WlT-I4-3k5" firstAttribute="trailing" secondItem="njG-cF-2RR" secondAttribute="trailing" id="zMZ-Ma-D1v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mitt sparande" id="Un5-fU-8Tp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="buttonMySavings" destination="fmU-k0-gRi" id="cMj-4g-3pL"/>
+                        <outlet property="buttonNewGoal" destination="ptL-yX-deO" id="5nW-17-qpZ"/>
+                        <outlet property="dotButton" destination="Mfs-il-dQ1" id="O0z-4M-mun"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hM-fk-Lq2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="-27.455357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6jG-qF-upN">
+            <objects>
+                <navigationController id="1qM-K9-hJX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="OZe-Ql-d0k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ob4-Ux-uWz" kind="relationship" relationship="rootViewController" id="8Rz-eg-FXf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAh-Qw-6HS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-864" y="-27"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="fmU-k0-gRi">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="ptL-yX-deO">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="background_shapes" width="375" height="326"/>
+        <image name="my_savings" width="104" height="65"/>
+        <image name="new_goal" width="120" height="72"/>
+        <namedColor name="FolksamColors/beige3">
+            <color red="0.96862745098039216" green="0.96078431372549022" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

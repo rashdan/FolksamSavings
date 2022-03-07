@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "laddaupp.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nytt sparmål-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController title="Nytt sparmål" id="Y6W-OH-hqX" customClass="MySavingGoalsViewController" customModule="Saving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_shapes_light" translatesAutoresizingMaskIntoConstraints="NO" id="8ba-VI-o8O">
+                                <rect key="frame" x="-11" y="482" width="408" height="427"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="427" id="ZzM-Ov-Fgg"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1m1-RK-hV2">
+                                <rect key="frame" x="20" y="64" width="100" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nel-Ai-4ON">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VR-Bl-5M5" customClass="FolksamCardView" customModule="FolksamUI">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Bostadsrattsforsakring"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="axis">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Bostad"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasChevron" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPs-VX-daU" customClass="FolksamCardView" customModule="FolksamUI">
+                                                <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Barnforsakring"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="axis">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Till barnen"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasChevron" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="9RE-eO-cuy" kind="show" id="eCy-0k-yVu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="177" id="aaF-uQ-DKo"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UJI-ms-pMh">
+                                        <rect key="frame" x="0.0" y="60" width="100" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lne-Ea-OlA" customClass="FolksamCardView" customModule="FolksamUI">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="my_savings"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="axis">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Pension"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasChevron" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AE-e8-lCF" customClass="FolksamCardView" customModule="FolksamUI">
+                                                <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="car"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="axis">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Nya bilen"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasChevron" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="177" id="jye-eo-dz9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7ps-pH-tM2">
+                                        <rect key="frame" x="0.0" y="120" width="100" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COc-Or-lkL" customClass="FolksamCardView" customModule="FolksamUI">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="gris"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="axis">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Bostad"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasChevron" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-HZ-cuA" customClass="FolksamCardView" customModule="FolksamUI">
+                                                <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="gris"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="axis">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Till barnen"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasChevron" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleFontSize">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <real key="value" value="0.29999999999999999"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                        <size key="value" width="0.0" height="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="177" id="Q0Z-w7-vY4"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="FolksamColors/beige3"/>
+                        <constraints>
+                            <constraint firstItem="1m1-RK-hV2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="LNb-s5-oeg"/>
+                            <constraint firstItem="1m1-RK-hV2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="c75-Ko-snu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1m1-RK-hV2" secondAttribute="trailing" constant="20" id="fBh-Gn-g4g"/>
+                            <constraint firstItem="8ba-VI-o8O" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="-27" id="msl-D6-zhh"/>
+                            <constraint firstItem="8ba-VI-o8O" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" constant="7" id="q5d-O0-abR"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="8ba-VI-o8O" secondAttribute="bottom" constant="-148" id="xVQ-OP-0Te"/>
+                        </constraints>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="127.90178571428571"/>
+        </scene>
+        <!--Till barnen-->
+        <scene sceneID="zor-dU-fyw">
+            <objects>
+                <viewController title="Till barnen" modalPresentationStyle="fullScreen" id="9RE-eO-cuy" customClass="NewSavingGoalViewController" customModule="Saving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bv8-hV-sde">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QvJ-YL-pfA" customClass="FolksamButton" customModule="FolksamUI">
+                                <rect key="frame" x="20" y="613" width="350" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="k6L-0U-NN3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Nästa"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="FolksamColors/Blue2m"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="rMA-72-RHv" kind="show" id="x2Q-Fx-29C"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OUW-pW-j0z">
+                                <rect key="frame" x="0.0" y="200" width="390" height="393"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-Ti-Zd0">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="194"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hur mycket vill du spara per månad?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeL-jK-4AX">
+                                                <rect key="frame" x="20" y="8" width="350" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-sE-L9f" customClass="FolksamSliderV2" customModule="FolksamUI">
+                                                <rect key="frame" x="40" y="26" width="310" height="73"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="73" id="SRT-KB-l4V"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                        <real key="value" value="15000"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                        <real key="value" value="500"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                        <integer key="value" value="100"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <real key="value" value="500"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="labelSufix" value="kr/mån"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useStep" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="VeL-jK-4AX" firstAttribute="leading" secondItem="3aB-Ti-Zd0" secondAttribute="leading" constant="20" id="G8D-kO-V2n"/>
+                                            <constraint firstItem="1aD-sE-L9f" firstAttribute="leading" secondItem="3aB-Ti-Zd0" secondAttribute="leading" constant="40" id="Kzc-Di-RjH"/>
+                                            <constraint firstAttribute="trailing" secondItem="VeL-jK-4AX" secondAttribute="trailing" constant="20" id="M1k-Yr-UV7"/>
+                                            <constraint firstItem="1aD-sE-L9f" firstAttribute="top" secondItem="VeL-jK-4AX" secondAttribute="bottom" id="dFn-p3-OJV"/>
+                                            <constraint firstAttribute="trailing" secondItem="1aD-sE-L9f" secondAttribute="trailing" constant="40" id="kKh-vd-dGf"/>
+                                            <constraint firstItem="VeL-jK-4AX" firstAttribute="top" secondItem="3aB-Ti-Zd0" secondAttribute="top" constant="8" id="qYf-RS-zUz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feI-33-oMd">
+                                        <rect key="frame" x="0.0" y="199" width="390" height="194"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hur lång tid vill du spara?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-ZS-WDm">
+                                                <rect key="frame" x="20" y="8" width="350" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1W-GS-gIs" customClass="FolksamSliderV2" customModule="FolksamUI">
+                                                <rect key="frame" x="40" y="26" width="310" height="73"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="73" id="GYV-pa-MWb"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasEdit" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                                        <real key="value" value="18"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="labelSufix" value="år"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="a1W-GS-gIs" secondAttribute="trailing" constant="40" id="6GO-gF-e0F"/>
+                                            <constraint firstItem="RZg-ZS-WDm" firstAttribute="top" secondItem="feI-33-oMd" secondAttribute="top" constant="8" id="7yT-tI-NIR"/>
+                                            <constraint firstAttribute="trailing" secondItem="RZg-ZS-WDm" secondAttribute="trailing" constant="20" id="Af7-EC-eP6"/>
+                                            <constraint firstItem="RZg-ZS-WDm" firstAttribute="leading" secondItem="feI-33-oMd" secondAttribute="leading" constant="20" id="Kqe-Gn-4qi"/>
+                                            <constraint firstItem="a1W-GS-gIs" firstAttribute="top" secondItem="RZg-ZS-WDm" secondAttribute="bottom" id="Qfz-7K-xgg"/>
+                                            <constraint firstItem="a1W-GS-gIs" firstAttribute="leading" secondItem="feI-33-oMd" secondAttribute="leading" constant="40" id="Rta-d8-HPW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laddaupp" translatesAutoresizingMaskIntoConstraints="NO" id="St9-HV-8fD">
+                                <rect key="frame" x="75" y="20" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tvS-9m-yEO"/>
+                        <color key="backgroundColor" name="FolksamColors/beige3"/>
+                        <constraints>
+                            <constraint firstItem="OUW-pW-j0z" firstAttribute="top" secondItem="tvS-9m-yEO" secondAttribute="top" constant="200" id="6mo-Tr-6Ro"/>
+                            <constraint firstItem="OUW-pW-j0z" firstAttribute="top" secondItem="St9-HV-8fD" secondAttribute="bottom" constant="52" id="Akn-lp-mZ4"/>
+                            <constraint firstItem="tvS-9m-yEO" firstAttribute="bottom" secondItem="QvJ-YL-pfA" secondAttribute="bottom" constant="20" id="J0w-IW-Oa7"/>
+                            <constraint firstItem="tvS-9m-yEO" firstAttribute="trailing" secondItem="OUW-pW-j0z" secondAttribute="trailing" id="LR8-gQ-e8i"/>
+                            <constraint firstItem="St9-HV-8fD" firstAttribute="top" secondItem="tvS-9m-yEO" secondAttribute="top" constant="20" id="Mc2-w7-VnD"/>
+                            <constraint firstItem="QvJ-YL-pfA" firstAttribute="top" secondItem="OUW-pW-j0z" secondAttribute="bottom" constant="20" id="Ohn-Cu-rKT"/>
+                            <constraint firstItem="OUW-pW-j0z" firstAttribute="leading" secondItem="tvS-9m-yEO" secondAttribute="leading" id="ZR7-AN-Yqx"/>
+                            <constraint firstItem="St9-HV-8fD" firstAttribute="leading" secondItem="tvS-9m-yEO" secondAttribute="leading" constant="75" id="nZA-MC-MGD"/>
+                            <constraint firstItem="QvJ-YL-pfA" firstAttribute="leading" secondItem="tvS-9m-yEO" secondAttribute="leading" constant="20" id="nZh-uA-AQM"/>
+                            <constraint firstItem="St9-HV-8fD" firstAttribute="centerX" secondItem="OUW-pW-j0z" secondAttribute="centerX" id="sKa-fH-O6C"/>
+                            <constraint firstItem="tvS-9m-yEO" firstAttribute="trailing" secondItem="QvJ-YL-pfA" secondAttribute="trailing" constant="20" id="vfp-FB-iTF"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="monthly" destination="1aD-sE-L9f" id="Daf-Pn-ED5"/>
+                        <outlet property="years" destination="a1W-GS-gIs" id="9uV-uY-oi4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tW-6c-enq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.23076923076917" y="127.25118483412322"/>
+        </scene>
+        <!--Till barnen-->
+        <scene sceneID="Vg2-Ng-OXK">
+            <objects>
+                <viewController id="rMA-72-RHv" customClass="ChartViewController" customModule="Saving" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rsc-mB-ErB">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" canCancelContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJC-if-px7">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zrU-CD-iLK" userLabel="Content">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1000"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCM-aE-4XH" customClass="LineChart" customModule="Saving" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="20" width="390" height="350"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="bPC-2d-FyR"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cxs-5u-kbf">
+                                                <rect key="frame" x="0.0" y="370" width="390" height="200"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-wT-1M3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="63.333333333333336"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hur mycket vill du spara per månad?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6d-YD-BMO">
+                                                                <rect key="frame" x="20" y="8" width="350" height="18"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvS-Mz-cz3" customClass="FolksamSliderV2" customModule="FolksamUI">
+                                                                <rect key="frame" x="40" y="16" width="310" height="73"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="73" id="ru9-xq-Gwg"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                                        <real key="value" value="15000"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                                        <real key="value" value="500"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                                        <integer key="value" value="100"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                                                        <real key="value" value="18"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                                        <real key="value" value="500"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="labelSufix" value="kr/mån"/>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="useStep" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="H6d-YD-BMO" firstAttribute="leading" secondItem="SxB-wT-1M3" secondAttribute="leading" constant="20" id="6uA-kv-p02"/>
+                                                            <constraint firstAttribute="trailing" secondItem="jvS-Mz-cz3" secondAttribute="trailing" constant="40" id="FjG-1y-WFv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="H6d-YD-BMO" secondAttribute="trailing" constant="20" id="P5A-YN-FC6"/>
+                                                            <constraint firstItem="H6d-YD-BMO" firstAttribute="top" secondItem="SxB-wT-1M3" secondAttribute="top" constant="8" id="PsT-hI-fc8"/>
+                                                            <constraint firstItem="jvS-Mz-cz3" firstAttribute="leading" secondItem="SxB-wT-1M3" secondAttribute="leading" constant="40" id="m0X-qQ-5To"/>
+                                                            <constraint firstItem="jvS-Mz-cz3" firstAttribute="top" secondItem="H6d-YD-BMO" secondAttribute="bottom" constant="-10" id="vNa-3B-ZkR"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMf-uO-YFz">
+                                                        <rect key="frame" x="0.0" y="68.333333333333371" width="390" height="63.333333333333343"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hur lång tid vill du spara?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNS-Km-KXk">
+                                                                <rect key="frame" x="20" y="8" width="350" height="18"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCG-5Y-hdt" customClass="FolksamSliderV2" customModule="FolksamUI">
+                                                                <rect key="frame" x="40" y="16" width="310" height="40"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="VFz-wQ-Tqy"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasEdit" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                                                        <real key="value" value="18"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                                        <real key="value" value="40"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                                        <real key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="labelSufix" value="år"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="oNS-Km-KXk" secondAttribute="trailing" constant="20" id="7AG-uq-6ud"/>
+                                                            <constraint firstItem="FCG-5Y-hdt" firstAttribute="leading" secondItem="kMf-uO-YFz" secondAttribute="leading" constant="40" id="EMy-SU-WxA"/>
+                                                            <constraint firstItem="oNS-Km-KXk" firstAttribute="leading" secondItem="kMf-uO-YFz" secondAttribute="leading" constant="20" id="M2g-VI-mXJ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="FCG-5Y-hdt" secondAttribute="trailing" constant="40" id="OH3-bK-3tF"/>
+                                                            <constraint firstItem="FCG-5Y-hdt" firstAttribute="top" secondItem="oNS-Km-KXk" secondAttribute="bottom" constant="-10" id="wE9-W7-aHa"/>
+                                                            <constraint firstItem="oNS-Km-KXk" firstAttribute="top" secondItem="kMf-uO-YFz" secondAttribute="top" constant="8" id="yaB-jd-bAa"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C1A-dv-2Et">
+                                                        <rect key="frame" x="0.0" y="136.66666666666663" width="390" height="63.333333333333343"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uppskaddad avkastning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smB-5l-KsP">
+                                                                <rect key="frame" x="20" y="8" width="350" height="18"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zph-Mo-VbZ" customClass="FolksamSliderV2" customModule="FolksamUI">
+                                                                <rect key="frame" x="40" y="16" width="310" height="40"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="70F-4H-DbQ"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasEdit" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="valueFontSize">
+                                                                        <real key="value" value="18"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                                                                        <real key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                                                                        <real key="value" value="0.0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                                                        <integer key="value" value="0"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="labelSufix" value="%"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="smB-5l-KsP" secondAttribute="trailing" constant="20" id="1ys-a7-rAu"/>
+                                                            <constraint firstItem="smB-5l-KsP" firstAttribute="leading" secondItem="C1A-dv-2Et" secondAttribute="leading" constant="20" id="Isv-t8-OAS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Zph-Mo-VbZ" secondAttribute="trailing" constant="40" id="KWY-AR-ogx"/>
+                                                            <constraint firstItem="Zph-Mo-VbZ" firstAttribute="top" secondItem="smB-5l-KsP" secondAttribute="bottom" constant="-10" id="TXl-R8-LEB"/>
+                                                            <constraint firstItem="Zph-Mo-VbZ" firstAttribute="leading" secondItem="C1A-dv-2Et" secondAttribute="leading" constant="40" id="d0Z-Un-Z2p"/>
+                                                            <constraint firstItem="smB-5l-KsP" firstAttribute="top" secondItem="C1A-dv-2Et" secondAttribute="top" constant="8" id="gLK-OC-UJM"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="g1d-Tt-nAC"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82e-56-77e" customClass="FolksamButton" customModule="FolksamUI">
+                                                <rect key="frame" x="20" y="590" width="350" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="x3t-fG-cL9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                <state key="normal" title="Spara"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" name="FolksamColors/Blue2m"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="21"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 kr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkB-Mr-bCZ">
+                                                <rect key="frame" x="8" y="8" width="374" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="lUO-hc-Vju"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="zCM-aE-4XH" firstAttribute="top" secondItem="nkB-Mr-bCZ" secondAttribute="bottom" constant="-20" id="8ps-wL-k4D"/>
+                                            <constraint firstAttribute="trailing" secondItem="nkB-Mr-bCZ" secondAttribute="trailing" constant="8" id="Gjn-N3-2jE"/>
+                                            <constraint firstItem="82e-56-77e" firstAttribute="top" secondItem="cxs-5u-kbf" secondAttribute="bottom" constant="20" id="IIr-hw-yVR"/>
+                                            <constraint firstItem="nkB-Mr-bCZ" firstAttribute="top" secondItem="zrU-CD-iLK" secondAttribute="top" constant="8" id="KEk-sr-ul4"/>
+                                            <constraint firstItem="cxs-5u-kbf" firstAttribute="leading" secondItem="zrU-CD-iLK" secondAttribute="leading" id="R79-ps-PaB"/>
+                                            <constraint firstItem="82e-56-77e" firstAttribute="leading" secondItem="zrU-CD-iLK" secondAttribute="leading" constant="20" symbolic="YES" id="U9r-fU-Ar8"/>
+                                            <constraint firstItem="nkB-Mr-bCZ" firstAttribute="leading" secondItem="zrU-CD-iLK" secondAttribute="leading" constant="8" id="V3k-Rb-Eq4"/>
+                                            <constraint firstAttribute="trailing" secondItem="zCM-aE-4XH" secondAttribute="trailing" id="YHk-OO-33F"/>
+                                            <constraint firstItem="cxs-5u-kbf" firstAttribute="top" secondItem="zCM-aE-4XH" secondAttribute="bottom" id="bNg-ey-nr8"/>
+                                            <constraint firstAttribute="trailing" secondItem="82e-56-77e" secondAttribute="trailing" constant="20" symbolic="YES" id="lLa-I6-h6Q"/>
+                                            <constraint firstAttribute="trailing" secondItem="cxs-5u-kbf" secondAttribute="trailing" id="m2y-mX-4lA"/>
+                                            <constraint firstAttribute="height" constant="1000" id="n1w-kc-sJ0"/>
+                                            <constraint firstItem="zCM-aE-4XH" firstAttribute="leading" secondItem="zrU-CD-iLK" secondAttribute="leading" id="nff-Tf-L10"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zrU-CD-iLK" firstAttribute="leading" secondItem="2Mn-Sl-Rr2" secondAttribute="leading" id="FOX-YN-hBc"/>
+                                    <constraint firstItem="zrU-CD-iLK" firstAttribute="width" secondItem="ruM-hl-w0N" secondAttribute="width" id="pca-Gb-EFd"/>
+                                    <constraint firstItem="zrU-CD-iLK" firstAttribute="bottom" secondItem="2Mn-Sl-Rr2" secondAttribute="bottom" id="uTD-lZ-B23"/>
+                                    <constraint firstItem="zrU-CD-iLK" firstAttribute="trailing" secondItem="2Mn-Sl-Rr2" secondAttribute="trailing" id="vik-pc-Wqa"/>
+                                    <constraint firstItem="zrU-CD-iLK" firstAttribute="top" secondItem="2Mn-Sl-Rr2" secondAttribute="top" id="yNY-pZ-K85"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="2Mn-Sl-Rr2"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ruM-hl-w0N"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YJp-dn-aug"/>
+                        <color key="backgroundColor" name="FolksamColors/beige3"/>
+                        <constraints>
+                            <constraint firstItem="lJC-if-px7" firstAttribute="top" secondItem="YJp-dn-aug" secondAttribute="top" id="Ctc-HF-yDD"/>
+                            <constraint firstItem="lJC-if-px7" firstAttribute="leading" secondItem="YJp-dn-aug" secondAttribute="leading" id="M3A-DC-4kh"/>
+                            <constraint firstItem="lJC-if-px7" firstAttribute="bottom" secondItem="YJp-dn-aug" secondAttribute="bottom" id="PoH-Z6-GNz"/>
+                            <constraint firstItem="lJC-if-px7" firstAttribute="trailing" secondItem="YJp-dn-aug" secondAttribute="trailing" id="dB9-4n-1ab"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Till barnen" largeTitleDisplayMode="never" id="BXf-Wd-zpz"/>
+                    <connections>
+                        <outlet property="chart" destination="zCM-aE-4XH" id="fwN-YD-g3P"/>
+                        <outlet property="finish" destination="82e-56-77e" id="658-KV-Qus"/>
+                        <outlet property="interestSlider" destination="Zph-Mo-VbZ" id="Zwt-wl-GSL"/>
+                        <outlet property="monthly" destination="jvS-Mz-cz3" id="oB2-xf-nHC"/>
+                        <outlet property="totalLabel" destination="nkB-Mr-bCZ" id="tdc-6P-w1U"/>
+                        <outlet property="years" destination="FCG-5Y-hdt" id="kBH-Dg-v4D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHe-Nl-fJr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813.8461538461538" y="126.54028436018957"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="82e-56-77e">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+        <designable name="8AE-e8-lCF">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="8VR-Bl-5M5">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="COc-Or-lkL">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="Lne-Ea-OlA">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="Pfm-HZ-cuA">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="QvJ-YL-pfA">
+            <size key="intrinsicContentSize" width="51" height="34"/>
+        </designable>
+        <designable name="aPs-VX-daU">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Barnforsakring" width="44" height="50"/>
+        <image name="Bostadsrattsforsakring" width="50" height="43"/>
+        <image name="background_shapes_light" width="375" height="376"/>
+        <image name="car" width="82" height="40"/>
+        <image name="gris" width="65" height="55"/>
+        <image name="laddaupp" width="158" height="158"/>
+        <image name="my_savings" width="104" height="65"/>
+        <namedColor name="FolksamColors/Blue2m">
+            <color red="0.0" green="0.57599997520446777" blue="0.87099999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FolksamColors/beige3">
+            <color red="0.96862745098039216" green="0.96078431372549022" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

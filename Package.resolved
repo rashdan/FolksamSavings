@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FolksamCommon",
+        "repositoryURL": "https://rashdan@bitbucket.org/folksamfuturelab/folksamcommon.git",
+        "state": {
+          "branch": null,
+          "revision": "d3dd8a7962d075040a5f7a95a638a176ae0d0183",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
