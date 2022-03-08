@@ -8,6 +8,7 @@
 import Combine
 import FolksamCommon
 import UIKit
+import Foundation
 
 @available(iOS 13.0, *)
 class MainButton: UIButton {
@@ -124,7 +125,7 @@ public class SavingMainViewController: UIViewController {
     }
 
     public static func make(savingsRepo: SavingsRepositoryProtocol) -> UINavigationController {
-        let storyboard = UIStoryboard(name: "SavingTab", bundle: Bundle(for: Self.self))
+        let storyboard = UIStoryboard(name: "SavingTab", bundle: Bundle.module)
         let (navigationController, viewController) = UIStoryboard.instantiateNavigationController(
             from: storyboard,
             childOfType: self

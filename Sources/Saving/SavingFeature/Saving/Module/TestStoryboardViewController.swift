@@ -24,7 +24,7 @@ public class TestStoryboardViewController: UIViewController {
     }
 
     public static func make() -> TestStoryboardViewController {
-        let storyboard = UIStoryboard(name: "TestStoryboard", bundle: Bundle(for: Self.self))
+        let storyboard = UIStoryboard(name: "TestStoryboard", bundle: Bundle.module)
         let viewController = UIStoryboard.instantiateViewController(from: storyboard, ofType: TestStoryboardViewController.self)
         return viewController
     }

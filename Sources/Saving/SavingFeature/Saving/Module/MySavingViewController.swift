@@ -21,7 +21,7 @@ public class MySavingViewController: UIViewController {
     }
 
     public static func make() -> MySavingViewController {
-        let storyboard = UIStoryboard(name: "MySaving", bundle: Bundle(for: Self.self))
+        let storyboard = UIStoryboard(name: "MySaving", bundle: Bundle.module)
         let viewController = UIStoryboard.instantiateViewController(from: storyboard, ofType: MySavingViewController.self)
 
         return viewController

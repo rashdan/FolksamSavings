@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,7 +13,7 @@
         <!--Nytt sparmål-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController title="Nytt sparmål" id="Y6W-OH-hqX" customClass="MySavingGoalsViewController" customModule="Saving" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SavingGoals" title="Nytt sparmål" id="Y6W-OH-hqX" customClass="MySavingGoalsViewController" customModule="Saving" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,13 +25,13 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1m1-RK-hV2">
-                                <rect key="frame" x="20" y="64" width="100" height="160"/>
+                                <rect key="frame" x="20" y="64" width="350" height="571"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nel-Ai-4ON">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="177"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8VR-Bl-5M5" customClass="FolksamCardView" customModule="FolksamUI">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="177"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="Bostadsrattsforsakring"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="axis">
@@ -60,7 +60,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPs-VX-daU" customClass="FolksamCardView" customModule="FolksamUI">
-                                                <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="185" y="0.0" width="165" height="177"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="Barnforsakring"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="axis">
@@ -94,10 +94,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UJI-ms-pMh">
-                                        <rect key="frame" x="0.0" y="60" width="100" height="40"/>
+                                        <rect key="frame" x="0.0" y="197" width="350" height="177"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lne-Ea-OlA" customClass="FolksamCardView" customModule="FolksamUI">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="177"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="my_savings"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="axis">
@@ -126,7 +126,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AE-e8-lCF" customClass="FolksamCardView" customModule="FolksamUI">
-                                                <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="185" y="0.0" width="165" height="177"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="car"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="axis">
@@ -157,10 +157,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7ps-pH-tM2">
-                                        <rect key="frame" x="0.0" y="120" width="100" height="40"/>
+                                        <rect key="frame" x="0.0" y="394" width="350" height="177"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COc-Or-lkL" customClass="FolksamCardView" customModule="FolksamUI">
-                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="177"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="gris"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="axis">
@@ -189,7 +189,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfm-HZ-cuA" customClass="FolksamCardView" customModule="FolksamUI">
-                                                <rect key="frame" x="60" y="0.0" width="40" height="40"/>
+                                                <rect key="frame" x="185" y="0.0" width="165" height="177"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="gris"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="axis">
@@ -242,7 +242,7 @@
         <!--Till barnen-->
         <scene sceneID="zor-dU-fyw">
             <objects>
-                <viewController title="Till barnen" modalPresentationStyle="fullScreen" id="9RE-eO-cuy" customClass="NewSavingGoalViewController" customModule="Saving" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Till barnen" modalPresentationStyle="fullScreen" id="9RE-eO-cuy" customClass="NewSavingGoalViewController" customModule="Saving" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bv8-hV-sde">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,7 +403,7 @@
         <!--Till barnen-->
         <scene sceneID="Vg2-Ng-OXK">
             <objects>
-                <viewController id="rMA-72-RHv" customClass="ChartViewController" customModule="Saving" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rMA-72-RHv" customClass="ChartViewController" customModule="Saving" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rsc-mB-ErB">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="673"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

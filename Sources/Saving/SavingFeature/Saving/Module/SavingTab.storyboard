@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1qM-K9-hJX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1qM-K9-hJX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,16 +12,16 @@
         <!--Mitt sparande-->
         <scene sceneID="lrQ-ao-tZE">
             <objects>
-                <viewController id="ob4-Ux-uWz" customClass="SavingMainViewController" customModule="Saving" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SavingTab" id="ob4-Ux-uWz" customClass="SavingMainViewController" customModule="Saving" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qc6-qQ-vl7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kqp-SD-uYJ">
-                                <rect key="frame" x="20" y="148" width="374" height="40"/>
+                                <rect key="frame" x="20" y="148" width="374" height="177"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-k0-gRi" customClass="FolksamCardView" customModule="FolksamUI">
-                                        <rect key="frame" x="0.0" y="0.0" width="177" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="image" value="my_savings"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="axis">
@@ -50,7 +50,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptL-yX-deO" customClass="FolksamCardView" customModule="FolksamUI">
-                                        <rect key="frame" x="197" y="0.0" width="177" height="40"/>
+                                        <rect key="frame" x="197" y="0.0" width="177" height="177"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="image" keyPath="image" value="new_goal"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="axis">

@@ -13,7 +13,7 @@ public class GraphViewController: UIViewController {
     @IBOutlet var chart: LineChart!
 
     public static func make() -> GraphViewController {
-        let storyboard = UIStoryboard(name: "Graph", bundle: Bundle(for: Self.self))
+        let storyboard = UIStoryboard(name: "Graph", bundle: Bundle.module)
         let viewController = UIStoryboard.instantiateViewController(from: storyboard, ofType: self)
         return viewController
     }
